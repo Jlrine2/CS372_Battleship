@@ -25,4 +25,4 @@ jobs:
         fi
 
     - name: Test
-      run: go test battleship/ship/ship_test.go
+      run: go test github.com/Jlrine2/CS372_Battleship/battleship/ship/ship_test.go
