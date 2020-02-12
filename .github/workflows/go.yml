@@ -26,5 +26,7 @@ jobs:
 
     - name: Test
       run: |
-         go test battleship/ship/ship_test.go
-         go test battleship/player/player_test.go
+         cd battleship/ship
+         go test
+         cd ../player
+         go test
