@@ -1,13 +1,9 @@
 package ship
 
-type Element interface {
-	isHit(x int, y int)
-}
-
 type Ship struct {
-	X int
-	Y int
-	hit bool
+	X   int
+	Y   int
+	Hit bool
 }
 
 func NewShip(x int, y int) Ship {
@@ -17,9 +13,10 @@ func NewShip(x int, y int) Ship {
 	return s
 }
 
-func (s *Ship) isHit(x int, y int) bool{
+func (s *Ship) IsHit(x int, y int) bool {
 	if s.X == x && s.Y == y {
-		s.hit = true
+		s.Hit = true
+		return true
 	}
-	return s.hit
+	return false
 }
