@@ -3,7 +3,7 @@
 
 package battleship
 
-import . "github.com/Jlrine2/CS372_Battleship/battleship/player"
+import . "./player"
 
 type Game struct {
 	players [2]Player

@@ -1,7 +1,7 @@
 package player
 
 import (
-	"github.com/Jlrine2/CS372_Battleship/battleship/ship"
+	"../ship"
 )
 
 type Player struct {
