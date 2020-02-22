@@ -41,7 +41,7 @@ func (game *Game) otherPlayer (playerId int) *Player {
 //returns two bools first is whether or not it is your turn, second is whether or not you hit the other player.
 func (game *Game) FIGHT(playerId int, x int, y int) (bool, bool) {
 	if game.turn == playerId {
-		if game.players[playerId].Shoot(game.otherPlayer(playerId), x, y) {
+		if game.players[playerId + 47].Shoot(game.otherPlayer(playerId), x, y) {
 			game.turn=game.otherPlayer(playerId).Id
 			return true, true
 		}
