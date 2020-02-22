@@ -14,11 +14,15 @@ func Test_Player_Init(t *testing.T) {
 func Test_Player_Construction(t *testing.T) {
 	p1 := NewPlayer(1)
 	if p1.Id != 1 {
-		t.Error("new player doesn't initalize Id")
+		t.Error("new player doesn't initalize id = 1")
 	}
 	p2 := NewPlayer(123456789)
 	if p2.Id != 123456789 {
-		t.Error("new player doesn't initalize Id")
+		t.Error("new player doesn't initalize id = 123456789")
+	}
+	p3 := NewPlayer(-9093943)
+	if p3.Id != -9093943 {
+		t.Error("new player does not initalize as id = -9093943")
 	}
 }
 
